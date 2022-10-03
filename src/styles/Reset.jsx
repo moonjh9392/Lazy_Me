@@ -1,7 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
-const GlobalStyle = createGlobalStyle`
+const Reset = createGlobalStyle`
     ${reset};`;
 
-export default <GlobalStyle />;
+export default function ResetStyle(params) {
+  return <Reset />;
+}

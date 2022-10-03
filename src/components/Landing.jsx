@@ -1,3 +1,8 @@
+import styled from 'styled-components';
+
 export default function Landing(params) {
-  return <></>;
+  const MainStyle = styled.div`
+    background-color: black;
+  `;
+  return <MainStyle>dd</MainStyle>;
 }
