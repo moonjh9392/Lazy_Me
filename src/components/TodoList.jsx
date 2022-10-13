@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencil } from '@fortawesome/free-solid-svg-icons';
 
 export default function TodoList(params) {
   const [AddList, setAddList] = useState(null);
@@ -20,11 +22,18 @@ export default function TodoList(params) {
     }
   `;
 
-  const WriteButton = styled.button``;
+  const ButtonStyle = styled.div`
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  `;
+
   return (
     <TodoListStyle>
       <input placeholder="할 일을 입력하세요." />
-      <WriteButton />
+      <ButtonStyle>
+        <FontAwesomeIcon icon={faPencil} size="2x" color="gray" />
+      </ButtonStyle>
     </TodoListStyle>
   );
 }
