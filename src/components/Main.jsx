@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 import Header from './common/Header';
-import TodoList from './TodoList';
+import WriteInput from './WriteInput';
 
 const MainStyle = styled.div`
   overflow-y: scroll;
@@ -32,7 +32,7 @@ const Main = () => {
       <div className="background">
         <div className="menu">
           {/* <Outlet /> */}
-          <TodoList />
+          <WriteInput />
         </div>
       </div>
     </MainStyle>

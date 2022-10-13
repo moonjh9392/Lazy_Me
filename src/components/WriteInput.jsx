@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
 
-export default function TodoList(params) {
-  const [AddList, setAddList] = useState(null);
-  const TodoListStyle = styled.div`
+export default function WriteInput(params) {
+  const [over, setOver] = useState(false);
+  const WriteInputStyle = styled.div`
     border: 1px solid rgba(231, 231, 234);
     border-radius: 8px;
     height: 48px;
@@ -24,16 +24,26 @@ export default function TodoList(params) {
 
   const ButtonStyle = styled.div`
     position: absolute;
-    right: 30px;
-    top: 10px;
+    right: 3%;
+    top: 18%;
   `;
 
   return (
-    <TodoListStyle>
+    <WriteInputStyle>
       <input placeholder="할 일을 입력하세요." />
       <ButtonStyle>
-        <FontAwesomeIcon icon={faPencil} size="2x" color="gray" />
+        <FontAwesomeIcon
+          icon={faPencil}
+          size="2x"
+          color={over ? 'brown' : 'gray'}
+          onMouseOver={() => {
+            setOver(true);
+          }}
+          onMouseLeave={() => {
+            setOver(false);
+          }}
+        />
       </ButtonStyle>
-    </TodoListStyle>
+    </WriteInputStyle>
   );
 }
