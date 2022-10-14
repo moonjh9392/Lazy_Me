@@ -19,6 +19,7 @@ export default function WriteInput(params) {
       padding: 0 18px;
       border-radius: 8px;
       font-size: 18px;
+      overflow: auto;
     }
   `;
 

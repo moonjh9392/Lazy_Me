@@ -4,8 +4,6 @@ import Header from './common/Header';
 import WriteInput from './WriteInput';
 
 const MainStyle = styled.div`
-  overflow-y: scroll;
-
   .menu {
     position: relative;
     margin: 0 auto;
