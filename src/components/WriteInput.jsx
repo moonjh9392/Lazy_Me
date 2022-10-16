@@ -24,8 +24,8 @@ const WriteInputStyle = styled.div`
 
 const ButtonStyle = styled.div`
   position: absolute;
-  right: 3%;
-  top: 18%;
+  right: 20px;
+  top: 10px;
 `;
 export default function WriteInput(params) {
   const [title, setTitle] = useState('');

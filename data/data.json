@@ -1,17 +1,12 @@
 {
   "todoList": [
     {
-      "id": 1,
-      "title": "json-server",
-      "memo": "typicode"
-    },
-    {
       "title": "ddd",
-      "id": 2
+      "id": 1
     },
     {
-      "title": "sdfsdf",
-      "id": 3
+      "title": "할일 2",
+      "id": 2
     }
   ]
 }
