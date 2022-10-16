@@ -17,6 +17,8 @@ cd data
 json-server --watch data.json --port 3001
 =============
 
+npm install react-confirm-alert --save
+
 //해야될것
 reduex
 graphQL

@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faDeleteLeft, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { fetchDelete, fetchPatch } from '../util/api';
 import { useEffect, useState } from 'react';
+import Confirm from './common/Confirm';
+import { confirmAlert } from 'react-confirm-alert'; // Import
 
 const url = 'http://localhost:3001/todoList/';
 const ListStyle = styled.div`
@@ -59,7 +61,15 @@ export default function List({ content }) {
   }, [check]);
 
   const handleDeleteClick = () => {
-    fetchDelete(url, id);
+    const title = '메모 삭제하기';
+    const contents = `${content.title}을(를) 끝내셨나요?`;
+    confirmAlert({
+      customUI: ({ onClose }) => {
+        return (
+          <Confirm onClose={onClose} title={title} content={contents} arg1={url} arg2={id} callback={fetchDelete} />
+        );
+      },
+    });
   };
   const handleSaveClick = () => {
     fetchPatch(url, id, data);

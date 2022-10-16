@@ -1,14 +1,8 @@
 {
   "todoList": [
     {
-      "title": "문지환",
+      "title": "dddd",
       "id": 1,
-      "check": true,
-      "memo": "ㄴㅇㄹㅇ"
-    },
-    {
-      "title": "111",
-      "id": 2,
       "check": false
     }
   ]
