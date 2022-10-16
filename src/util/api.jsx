@@ -73,7 +73,7 @@ export const fetchPatch = (url, id, data) => {
     body: JSON.stringify(data),
   })
     .then(() => {
-      window.location.href = BASE_URL;
+      // window.location.href = BASE_URL;
     })
     .catch((error) => {
       console.error('Error', error);
