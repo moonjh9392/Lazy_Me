@@ -24,7 +24,7 @@ const WriteInputStyle = styled.div`
 
 const ButtonStyle = styled.div`
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 10px;
 `;
 export default function WriteInput(params) {
@@ -41,9 +41,14 @@ export default function WriteInput(params) {
     fetchCreate('http://localhost:3001/todoList/', data);
     // setTitle('');
   };
+  const onKeyUp = (e) => {
+    if (e.key === 'Enter') {
+      saveTodoContent(e);
+    }
+  };
   return (
     <WriteInputStyle>
-      <input placeholder="할 일을 입력하세요." value={title} onChange={handleChangeContnet} />
+      <input placeholder="할 일을 입력하세요." value={title} onChange={handleChangeContnet} onKeyUp={onKeyUp} />
 
       <ButtonStyle>
         <FontAwesomeIcon

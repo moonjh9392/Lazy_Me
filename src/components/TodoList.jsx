@@ -7,6 +7,7 @@ const TodoListStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
 `;
 export default function TodoList(params) {
   const [todoList, isPending, error] = useFetch('http://localhost:3001/todoList/');
