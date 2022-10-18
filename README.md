@@ -1,26 +1,23 @@
-## Todo_List
+## Lazy_Me
 
-react-router-dom@6
+게으른 나를 위해 작성하는 todo List
 
+사용한 라이브러리
+
+react-router-dom
 styled-reset
-
 styled-component
+fortawesome
+react-confirm-alert
 
-npm i --save @fortawesome/fontawesome-svg-core
-npm install --save @fortawesome/react-fontawesome
-npm install --save @fortawesome/free-solid-svg-icons
+Test
+json-server
 
-==json server==
-npm i -g json-server
+Figma
+https://www.figma.com/file/2wTCRmCIi6GCCHc31hsJ1Q/TodoList?node-id=0%3A1
 
-cd data
-json-server --watch data.json --port 3001
-=============
+AWS
+http://lazyme.s3-website.ap-northeast-2.amazonaws.com/
 
-npm install react-confirm-alert --save
-
-//해야될것
-reduex
-graphQL
-
-1. input 초과시 아래로 늘리기
+DB
+https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB
