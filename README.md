@@ -19,7 +19,8 @@ Test
 json-server
 
 Figma
-<a target='_blank' href='https://www.figma.com/file/2wTCRmCIi6GCCHc31hsJ1Q/TodoList?node-id=0%3A1'> https://www.figma.com/file/2wTCRmCIi6GCCHc31hsJ1Q/TodoList?node-id=0%3A1</a>
+
+https://www.figma.com/file/2wTCRmCIi6GCCHc31hsJ1Q/TodoList?node-id=0%3A1
 
 AWS
 http://lazyme.s3-website.ap-northeast-2.amazonaws.com/
