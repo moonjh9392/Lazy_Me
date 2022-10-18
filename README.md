@@ -5,12 +5,17 @@
 사용한 라이브러리
 
 react-router-dom
+
 styled-reset
+
 styled-component
+
 fortawesome
+
 react-confirm-alert
 
 Test
+
 json-server
 
 Figma
