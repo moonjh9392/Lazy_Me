@@ -26,3 +26,7 @@ http://lazyme.s3-website.ap-northeast-2.amazonaws.com/
 
 DB
 https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB
+
+
+https://user-images.githubusercontent.com/45509511/196344487-e6d1e90d-2d86-4e8d-9dca-d0df7fbb97a1.mov
+
