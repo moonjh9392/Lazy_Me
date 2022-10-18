@@ -1,14 +1,16 @@
 {
   "todoList": [
     {
-      "title": "111",
+      "title": "할일 1",
       "id": 1,
-      "check": true
+      "check": true,
+      "memo": "메모 저장하기"
     },
     {
-      "title": "333",
+      "title": "할일 3",
       "id": 3,
-      "check": false
+      "check": true,
+      "memo": "삭제하기"
     }
   ]
 }

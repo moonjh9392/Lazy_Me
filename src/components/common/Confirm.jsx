@@ -36,6 +36,7 @@ export default function Confirm({ onClose, title, content, arg1, arg2, callback 
         <button
           onClick={() => {
             callback(arg1, arg2);
+            onClose();
           }}
         >
           Yes!
