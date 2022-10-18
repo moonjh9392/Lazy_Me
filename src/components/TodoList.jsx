@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import Loading from './common/Loading';
 import List from './List';
 
+// real: https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/db
+// test: http://localhost:3001/todoList/
+const url = `https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/todoList/`;
+
 const TodoListStyle = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,15 +14,15 @@ const TodoListStyle = styled.div`
   margin-top: 30px;
 `;
 export default function TodoList(params) {
-  const [todoList, isPending, error] = useFetch('http://localhost:3001/todoList/');
+  const [todoList, isPending, error] = useFetch(url);
   return (
     <TodoListStyle>
-      {isPending ? (
-        <Loading />
-      ) : (
+      {todoList ? (
         todoList.map((ele) => {
           return <List key={ele.id} content={ele} />;
         })
+      ) : (
+        <Loading />
       )}
     </TodoListStyle>
   );

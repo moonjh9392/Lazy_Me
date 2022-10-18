@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { fetchCreate } from '../util/api';
 
+// real: https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/db
+// test: http://localhost:3001/todoList/
+const url = `https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/todoList/`;
+
 const WriteInputStyle = styled.div`
   border: 1px solid rgba(231, 231, 234);
   border-radius: 8px;
@@ -38,7 +42,8 @@ export default function WriteInput(params) {
   const saveTodoContent = (e) => {
     e.preventDefault();
     const data = { title };
-    fetchCreate('http://localhost:3001/todoList/', data);
+
+    fetchCreate(url, data);
     // setTitle('');
   };
   const onKeyUp = (e) => {

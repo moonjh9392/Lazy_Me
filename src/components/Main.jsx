@@ -21,6 +21,9 @@ const MainStyle = styled.div`
     padding-bottom: 80px;
     padding-top: 40px;
     height: 100vh;
+    @media screen and (min-height: 1200px) {
+      height: 100%;
+    }
   }
 `;
 
