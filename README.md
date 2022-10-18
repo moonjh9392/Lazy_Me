@@ -27,7 +27,7 @@ http://lazyme.s3-website.ap-northeast-2.amazonaws.com/
 DB
 https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB
 
-`typicode my-json-server가 Beta 버전이라 GET이외의 다른 method(POST,PATCH,DELETE) 사용이 불가능 하다고함`
+`typicode my-json-server가 Beta 버전이라 GET이외의 다른 method(POST,PATCH,DELETE) 사용이 불가능 하다는거 같음`
 
 로컬 테스트 동영상
 
