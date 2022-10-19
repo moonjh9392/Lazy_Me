@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-
-const BASE_URL = 'http://localhost:3000/';
+//real : http://lazyme.s3-website.ap-northeast-2.amazonaws.com/
+// dev : http://localhost:3000/
+const BASE_URL = 'http://lazyme.s3-website.ap-northeast-2.amazonaws.com/';
 
 export const useFetch = (url) => {
   const [data, setData] = useState(null);

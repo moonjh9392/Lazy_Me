@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { fetchCreate } from '../util/api';
 
-// real: https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/db
-// test: http://localhost:3001/todoList/
+// real: https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/todoList/
+// dev: http://localhost:3001/todoList/
 const url = `https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/todoList/`;
 
 const WriteInputStyle = styled.div`
@@ -41,10 +41,22 @@ export default function WriteInput(params) {
 
   const saveTodoContent = (e) => {
     e.preventDefault();
-    const data = { title };
+    const data = { title, check: false, memo: '' };
+    //local storage 사용
+    let todoList = localStorage.getItem('todoList');
+    if (todoList && Array.isArray(todoList)) {
+      data[0].id = todoList.length;
+      todoList.push(data);
+      localStorage.setItem('todoList');
+    } else {
+      const arr = [];
+      arr.push(data);
+      localStorage.setItem('todoList', JSON.stringify(arr));
+    }
+    window.reload();
 
-    fetchCreate(url, data);
-    // setTitle('');
+    // json server 사용
+    // fetchCreate(url, data);
   };
   const onKeyUp = (e) => {
     if (e.key === 'Enter') {

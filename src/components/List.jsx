@@ -6,8 +6,8 @@ import { useEffect, useState } from 'react';
 import Confirm from './common/Confirm';
 import { confirmAlert } from 'react-confirm-alert'; // Import
 
-// real: https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/db
-// test: http://localhost:3001/todoList/
+// real: https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/todoList/
+// dev: http://localhost:3001/todoList/
 const url = `https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/todoList/`;
 
 const ListStyle = styled.div`

@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Loading from './common/Loading';
 import List from './List';
 
-// real: https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/db
-// test: http://localhost:3001/todoList/
+// real: https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/todoList/
+// dev: http://localhost:3001/todoList/
 const url = `https://my-json-server.typicode.com/moonjh9392/Lazy_Me_DB/todoList/`;
 
 const TodoListStyle = styled.div`
