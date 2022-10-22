@@ -14,7 +14,14 @@ const TodoListStyle = styled.div`
   margin-top: 30px;
 `;
 export default function TodoList(params) {
-  const [todoList, isPending, error] = useFetch(url);
+  //api 사용
+  // const [todoList, isPending, error] = useFetch(url);
+
+  //localstorage 사용
+  let todoList = localStorage.getItem('todoList');
+  if (todoList) {
+    todoList = JSON.parse(todoList);
+  }
   return (
     <TodoListStyle>
       {todoList ? (

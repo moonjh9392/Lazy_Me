@@ -60,7 +60,8 @@ export default function List({ content }) {
   };
 
   useEffect(() => {
-    fetchPatch(url, id, data);
+    //api
+    // fetchPatch(url, id, data);
   }, [check]);
 
   const handleDeleteClick = () => {
