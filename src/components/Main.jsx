@@ -6,6 +6,7 @@ import WriteInput from './WriteInput';
 import { useDispatch, useSelector } from 'react-redux';
 import { AddTodo, AllChangeTodo } from '../actions/index';
 import { useRef } from 'react';
+import Footer from './common/Footer';
 
 const MainStyle = styled.div`
   .menu {
@@ -53,6 +54,7 @@ const Main = () => {
           <TodoList todoList={todoList} />
         </div>
       </div>
+      <Footer />
     </MainStyle>
   );
 };
